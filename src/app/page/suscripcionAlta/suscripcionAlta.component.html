@@ -1,0 +1,154 @@
+<br><br><br><br>
+
+<html>
+<body>
+  <main role="main">
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron color">
+      <div class="container">
+        <div class="display-6">Activá tu suscripción ahora!! o..
+          <a href="../inicio/">volve más tarde</a>
+        </div>
+        <br>
+        <h4>Su usuario es: {{this.usuarioActual.email}}</h4>
+
+
+   </div>
+    </div>
+    <br><br>
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+          <img src="assets/bronce.png" height="40%">
+          <h2>Pack Bronce</h2>
+          <p>Acceso limitado a: 1 juego</p>
+          <p>Nivel Básico / Principiante</p>
+          <h5>Casual Gamer</h5>
+          <button class="btn btn-outline-primary" (click)="this.suscribirBronce()">
+            Suscribir
+          </button>
+        </div>
+
+        <div class="col-md-4">
+          <img src="assets/plata.png" height="40%">
+          <h2>Pack Plata</h2>
+          <p>Acceso limitado a: 2 juegos</p>
+          <p>Nivel Medio / Aficionao</p>
+          <h5>Hardcore Gamer</h5>
+          <button class="btn btn-outline-primary" (click)="this.suscribirPlata()">
+            Suscribir
+          </button>
+        </div>
+
+        <div class="col-md-4">
+          <img src="assets/oro.png" height="40%">
+          <h2>Pack Oro</h2>
+          <p>Acceso limitado: 4 juegos</p>
+          <p>Nivel Avanzado / Expertos</p>
+          <h5>Professional Gamer</h5>
+          <button class="btn btn-outline-primary" (click)="this.suscribirOro()">
+            Suscribir
+          </button>
+        </div>
+      </div>
+      <h2 class="display-6 text-center mb-4">Compará planes</h2>
+
+      <div class="table-responsive">
+        <table class="table text-center">
+          <thead>
+            <tr>
+              <th style="width: 34%;"></th>
+              <th style="width: 22%;">$ 1250.-</th>
+              <th style="width: 22%;">$ 2250.-</th>
+              <th style="width: 22%;">$ 4250</th>
+            </tr>
+            <tr>
+              <th style="width: 34%;"></th>
+              <th style="width: 22%;">Bronce</th>
+              <th style="width: 22%;">Plata</th>
+              <th style="width: 22%;">Oro</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" class="text-start">Mayor o Menor</th>
+              <td><svg style="color: rgb(79, 220, 36);" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+              </svg></td>
+              <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+              <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <th scope="row" class="text-start">Tateti</th>
+              <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+              <td><svg style="color: rgb(79, 220, 36);" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+              </svg></td>
+              <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+            </tr>
+            <tr>
+              <th scope="row" class="text-start">Adivina Número</th>
+              <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+              <td><svg style="color: rgb(79, 220, 36);" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+              </svg></td>
+              <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+            </tr>
+          </tbody>
+
+          <tbody>
+            <tr>
+              <th scope="row" class="text-start">Piedra-Papel-Tijera</th>
+              <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+              <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+              <td><svg style="color: rgb(79, 220, 36);" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+              </svg></td>
+            </tr>
+            <tr>
+              <th scope="row" class="text-start">Ahorcado</th>
+              <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+              <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+              <td><svg style="color: rgb(79, 220, 36);" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+              </svg></td>
+            </tr>
+            <tr>
+              <th scope="row" class="text-start">Cuál es el emoji?</th>
+              <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+              <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+              <td><svg style="color: rgb(79, 220, 36);" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+              </svg></td>
+
+            </tr>
+            <tr>
+              <th scope="row" class="text-start">Ordena Número</th>
+              <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+              <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+              <td><svg style="color: rgb(79, 220, 36);" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+              </svg></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <footer >
+      <p class="float-end"><a href="bienvenido">Subir</a></p>
+      <p>&copy; 2022 Company, Inc. &middot; <a href="#">Privacidad</a> &middot; <a href="#">Terminos</a></p>
+    </footer>
+  </main>
+
+
+
+
+    <!-- /container -->
+
+
+
+  </body>
+</html>

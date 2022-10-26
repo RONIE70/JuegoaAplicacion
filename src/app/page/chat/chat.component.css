@@ -1,0 +1,72 @@
+.cardConteiner{
+  width: 300px;
+  height: 360px;
+  position: fixed;
+  right: 0.5rem;
+  bottom: 8rem;
+}
+.card-header{
+background-color: rgb(102, 102, 230);
+color: aliceblue;
+font-weight: 700;
+}
+.card-body{
+  padding: 0.5rem;
+  background-image: url('https://i.pinimg.com/736x/b5/a7/1c/b5a71c9b319b399f7fd14ba77cef80cb.jpg');
+}
+.imgEnviar:active{
+transform: scale(1.5);
+}
+.enviado{
+display: block;
+float: right;
+background-color: rgb(81, 81, 236);
+color: aliceblue;
+min-width: 50.01%;
+border-radius: 6px;
+text-align: left;
+}
+.recibido{
+  display: block;
+  float: left;
+  background-color: rgb(160, 160, 165);
+  color: aliceblue;
+  min-width: 50.01%;
+  border-radius: 6px;
+  text-align: left;
+}
+.contenedorDeMensajes{
+  overflow: scroll;
+  padding: 0.3rem;
+}
+.contenedorDeMensajes::-webkit-scrollbar{
+  display:none;
+}
+.chatIconConteiner{
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  right: 0.5rem;
+  bottom: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: aquamarine;
+  box-shadow: 0 0 10px 2px gray;
+  border-radius: 100%;
+}
+.chatIcon{
+  width: 120px;
+  height: 80px;
+}
+.closeIcon{
+  position: absolute;
+  cursor: pointer;
+  right: 0.5rem;
+  top: 0.5rem;
+  font-size: 1.5rem;
+}
+form{
+  background-color: blue;
+}

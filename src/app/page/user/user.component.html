@@ -1,0 +1,74 @@
+<link rel="stylesheet" href="https://bootswatch.com/4/materia/boostrap.css">
+<link rel="stylesheet" href="https://use.fontawesone.com/realeases/v5.6.3/css/all.css"
+integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+
+
+
+<div class="github-car user-card">
+  <div class="header">
+    <a href="{{user.html_url}}" target="_blank" class="avatar">
+      <img [src]="user.avatar_url + '&s=180'" [alt]="user.name">
+    </a>
+
+    <div class="content">
+      <h1>{{user.name}}</h1>
+      <br><br>
+      Publica en Github desde:
+      <span>{{user.created_at}}</span>
+      <br>
+
+      <span>{{user.location}}
+        <i class="fas fa-map-marker"></i>
+      </span>
+      <div class="alert alert-succes">
+        <br>
+        <h5 class="mb-2">{{user.bio}}</h5>
+      </div>
+      <ul class="status">
+        <li class="">
+          <a [href]="'https://github.com/'+user.login+'?tab=repositories'">Repos
+            <strong>{{user.public_repos}}</strong>
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+        <li class="">
+          <a href="{{user.html_url}}">
+            Gists:
+            <strong>{{user.public_gists}}</strong>
+            <i class="fas fa-book-open"></i>
+          </a>
+        </li>
+        <li class="">
+          <a [href]="'https://github.com/'+user.login+'followers'">
+            Followers:
+            <strong>{{user.followers}}</strong>
+            <i class="fas user"></i>
+          </a>
+
+        </li>
+
+        <li class="company">
+          <br><br>
+          <a [href]="'https://github.com/'+user.login+'company'">
+           Compañía:
+            <strong>{{user.company}}</strong>
+            <i class="fas fa-book-open"></i>
+          </a>
+
+        </li>
+
+        <li class="actual">
+          <br><br><br>
+          Actualizado al:
+          <strong>{{user.updated_at}}</strong>
+          <i class="fas fa-book-open"></i>
+          <br>
+
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

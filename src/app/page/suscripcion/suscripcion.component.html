@@ -1,0 +1,334 @@
+
+<br><br><br>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+  </head>
+
+  <body>
+
+      <div class="layout flex flex-column min-h-screen">
+      <main role="main">
+      <section class="hero bg-hero primary-hero">
+      <div class="container z-10">
+        <div class="row d-flex align-items-center min-h-full">
+        <div class="text-center md:text-left col-12 md:col-6">
+          <h1 class="md:my-0 lg:pr-3 text-white font-size-4xl lg:font-size-5xl">
+   <br>
+            Bienvenido! a suscripciones
+
+          </h1>
+          <p class="text-white font-size-base font-400 lg:pr-8">
+          • Podes elegir tres diferentes opciones , para competir en familia o con amigos •
+           ACTIVA EL PLAN A TU MEDIDA</p><br>
+          <p>Visualiza tus suscripciones activas y accede a tus juegos en forma directa</p>
+
+          <button id="boton" routerLink="../suscripcionAlta/">ACTIVAR PLAN</button>
+
+
+      </div>
+        <div id="imgHead" class="col flex justify-content-center">
+          <img class="min-w-hero max-w-hero lg:max-w-none" src="//theme.zdassets.com/theme_assets/6641/6d3cbbaa0fe7639a1dc3893436a2763bb5634f84.svg">
+        </div>
+      </div>
+      </div>
+    </section>
+
+
+
+      <div class="jumbotron">
+        <div class="container">
+
+        </div>
+      </div>
+
+
+
+
+      <div class="container radioespacio">
+        <div class="row">
+          <div class="row" >
+            <ng-container *ngIf="!this.buscarPack; then ifBlock else elseBlock"></ng-container>
+            <ng-template #ifBlock>
+              <button
+                class="btn btn-primary"
+                type="button"
+                (click)="buscaPack(1)"
+              >
+                Membresía: 1- Bronce
+              </button>
+              <button
+              class="btn btn-secondary"
+              type="button"
+              (click)="buscaPack(2)"
+            >
+            Membresía: 2- Plata
+            </button>
+            <button
+            class="btn btn-info"
+            type="button"
+            (click)="buscaPack(3)"
+          >
+          Membresía: 3- Oro
+          </button>
+            </ng-template>
+            <ng-template #elseBlock>
+              <button
+                class="btn btn-primary"
+                type="button"
+                (click)="buscaUsuario()"
+              >
+                Busqueda por Usuario
+              </button>
+            </ng-template>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="container" *ngIf="!this.buscarPack">
+        <div class="row">
+          <div class="col-md-4">
+            <h2>Usuario: {{ this.jugadorActual.nombre }}</h2>
+            <p>Suscripciones activas</p>
+            <table>
+              <tr>
+                <th>Usuario</th>
+                <th>Pack</th>
+                <th>Ta-te-ti</th>
+                <th>Piedra  Papel  Tijera</th>
+                <th>Adivina Número</th>
+                <th>Ahorcado</th>
+                <th>Mayor o Menor</th>
+                <th>Cuál es el emoji?</th>
+                <th>Ordena el Número</th>
+              </tr>
+              <tr *ngFor="let item of this.listaSuscripciones">
+                <td *ngIf="item.mail == this.jugadorActual.email">
+                  {{ item.mail }}
+                </td>
+                <td *ngIf="item.mail == this.jugadorActual.email">
+                  {{ item.pack }}
+                </td>
+                <td *ngIf="item.mail == this.jugadorActual.email">
+                  <div *ngIf="item.tateti == 1">
+                      <div class="card" routerLink="tateti" (click)="tateti()" (click)="hacerSalidaSus()">
+
+                        <img src="https://store-images.microsoft.com/image/apps.62838.13510798882882481.fb01a5b9-aa8e-49f0-b5e2-fd3114555ad8.2d82f6b0-a9c7-42b7-9075-63ce4f4021cd?" height="100%" width="80%">
+                          <div class="grid-item1">
+                          </div>
+                        </div>
+                    </div>
+                </td>
+
+                <td *ngIf="item.mail == this.jugadorActual.email">
+                  <div *ngIf="item.ppt == 1">
+                    <div routerLink="ppt" class="card" (click)="ppt()">
+                      <img src="https://www.conmasfuturo.com/wp-content/uploads/2014/04/piedrapapeltijeralagartospock.jpg"
+                      height="100%" width="40%">
+                        <div class="grid-item2">
+                       </div>
+                      </div>
+                  </div>
+                </td>
+
+                <td *ngIf="item.mail == this.jugadorActual.email">
+                  <div *ngIf="item.adivina == 1">
+                    <div class="card" routerLink="adivinador" (click)="adivina()">
+                      <img src="https://az779572.vo.msecnd.net/screens-400/7f957f1b5345474ea869eff5e7ea9c47"
+                      height="100%" width="50%">
+                      <div class=".grid-item2">
+                      </div>
+                    </div>
+                  </div>
+                </td>
+
+                <td *ngIf="item.mail == this.jugadorActual.email">
+                  <div *ngIf="item.ahorcado == 1">
+                    <div class="card" routerLink="ahorcado" (click)="ahorcado()" >
+
+                      <img src="https://play-lh.googleusercontent.com/IxTbEUOqg2k8WA4BCyW8YXL4un9mWny204Jr3dpQf9udLKbpyq-tzQmRdQn87hvqvz4"
+                      height="100%" width="80%">
+                        <div class=".grid-item2">
+                        </div>
+                      </div>
+                  </div>
+                </td>
+
+                <td *ngIf="item.mail == this.jugadorActual.email">
+                  <div *ngIf="item.mayorMenor == 1">
+                    <div class="card" (click)="mayMenor()">
+                      <h6>>? <?</h6>
+                      <img src="https://tomi-digital-resources.storage.googleapis.com/images/classes/resources/rsc-387246-5f7695c427c6f.jpeg">
+                      <div class="grid-item2">
+                      </div>
+                    </div>
+                    <!--a class="nav-link" routerLink="/mayormenor">Mayor o Menor</a-->
+                  </div>
+                </td>
+
+                <td *ngIf="item.mail == this.jugadorActual.email && item.pack == buscarTipo">
+                  <div *ngIf="item.queemoji == 1">
+                    <div class="card" routerLink="queemoji" (click)="queemoji()">
+                      <img src="https://lanoticia.com/wp-content/uploads/2020/07/cual-emoji-es-el-que-mas-usas.jpg"
+                      height="100%" width="30%">
+                        <div class=".grid-item2">
+                        </div>
+                      </div>
+                  </div>
+                </td>
+
+                <td *ngIf="item.mail == this.jugadorActual.email && item.pack == buscarTipo">
+                  <div *ngIf="item.ordenaNum == 1">
+                    <div class="card" routerLink="ordenanumero" (click)="ordenaNum()">
+
+                      <img src="https://play-lh.googleusercontent.com/HtrJSC3maKqTHcgEcg6nrwt4wYLqtj2r3XbXZ_5OgEi37lSGt5RBMR0UhpEVrs-P9nI"
+                      height="100%" width="50%">
+                        <div class=".grid-item2">
+                        </div>
+                      </div>
+                  </div>
+                </td>
+              </tr>
+            </table>
+
+            <br />
+          </div>
+        </div>
+
+        <hr />
+      </div>
+      <div class="container" *ngIf="this.buscarPack">
+        <!-- Example row of columns -->
+        <div class="row">
+          <div class="col-md-4">
+            <h2>Membresía: {{this.buscarTipo}}</h2>
+            <p>{{ this.jugadorActual.nombre }}</p>
+            <table>
+              <tr>
+                <th>Usuario</th>
+                <th>Pack</th>
+                <th>Ta-te-ti</th>
+                <th>Piedra  Papel  Tijera</th>
+                <th>Adivina Número</th>
+                <th>Ahorcado</th>
+                <th>Mayor o Menor</th>
+                <th>Cuál es el emoji?</th>
+                <th>Ordena el Número</th>
+              </tr>
+              <tr *ngFor="let item of this.listaSuscripciones">
+                <td *ngIf="item.mail == this.jugadorActual.email && item.pack == this.buscarTipo">
+                  {{ item.mail }}
+                </td>
+                <td *ngIf="item.mail == this.jugadorActual.email && item.pack == buscarTipo">
+                  {{ item.pack }}
+                </td>
+                <td *ngIf="item.mail == this.jugadorActual.email && item.pack == buscarTipo">
+                  <div *ngIf="item.tateti == 1">
+                    <div class="card" routerLink="tateti" (click)="tateti()">
+
+                      <img src="https://store-images.microsoft.com/image/apps.62838.13510798882882481.fb01a5b9-aa8e-49f0-b5e2-fd3114555ad8.2d82f6b0-a9c7-42b7-9075-63ce4f4021cd?mode=scale&q=90&h=300&w=300">
+                        <div class="grid-item1">
+                        </div>
+                      </div>
+                  </div>
+                </td>
+                <td *ngIf="item.mail == this.jugadorActual.email && item.pack == buscarTipo">
+                  <div *ngIf="item.ppt == 1">
+                    <div routerLink="ppt" class="card" (click)="ppt()">
+                      <img src="https://www.conmasfuturo.com/wp-content/uploads/2014/04/piedrapapeltijeralagartospock.jpg"
+                      height="100%" width="40%">
+                        <div class="grid-item2">
+                       </div>
+                      </div>
+                  </div>
+                </td>
+                <td *ngIf="item.mail == this.jugadorActual.email && item.pack == buscarTipo">
+                  <div *ngIf="item.adivina == 1">
+                    <div class="card" routerLink="adivinador" (click)="adivina()">
+                      <img src="https://az779572.vo.msecnd.net/screens-400/7f957f1b5345474ea869eff5e7ea9c47"
+                      height="100%" width="50%">
+                      <div class=".grid-item2">
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <td *ngIf="item.mail == this.jugadorActual.email && item.pack == buscarTipo">
+                  <div *ngIf="item.ahorcado == 1">
+                    <div class="card" routerLink="ahorcado" (click)="ahorcado()" >
+
+                      <img src="https://play-lh.googleusercontent.com/IxTbEUOqg2k8WA4BCyW8YXL4un9mWny204Jr3dpQf9udLKbpyq-tzQmRdQn87hvqvz4"
+                      height="100%">
+                        <div class=".grid-item2">
+                        </div>
+                      </div>
+                    <!--a class="nav-link" routerLink="/ahorcado">Ahorcado</a-->
+                  </div>
+                </td>
+                <td *ngIf="item.mail == this.jugadorActual.email && item.pack == buscarTipo">
+                  <div *ngIf="item.mayorMenor == 1">
+                    <div class="card" (click)="mayMenor()">
+                      <h6>>? <?</h6>
+                      <img src="https://tomi-digital-resources.storage.googleapis.com/images/classes/resources/rsc-387246-5f7695c427c6f.jpeg">
+                      <div class="grid-item2">
+                      </div>
+                    </div>
+
+                  </div>
+                </td>
+                <td *ngIf="item.mail == this.jugadorActual.email && item.pack == buscarTipo">
+                  <div *ngIf="item.queemoji == 1">
+                    <div class="card" routerLink="queemoji" (click)="queemoji()">
+                      <img src="https://lanoticia.com/wp-content/uploads/2020/07/cual-emoji-es-el-que-mas-usas.jpg"
+                      height="100%" width="30%">
+                        <div class=".grid-item2">
+                        </div>
+                      </div>
+                  </div>
+                </td>
+                <td *ngIf="item.mail == this.jugadorActual.email && item.pack == buscarTipo">
+                  <div *ngIf="item.ordenaNum == 1">
+                    <div class="card" routerLink="ordenanumero" (click)="ordenaNum()">
+
+                      <img src="https://play-lh.googleusercontent.com/HtrJSC3maKqTHcgEcg6nrwt4wYLqtj2r3XbXZ_5OgEi37lSGt5RBMR0UhpEVrs-P9nI"
+                      height="100%" width="50%">
+                        <div class=".grid-item2">
+                        </div>
+                      </div></div>
+                </td>
+              </tr>
+            </table>
+
+            <br />
+          </div>
+        </div>
+
+        <hr />
+      </div>
+      <!-- /container -->
+
+    </main>
+  </div>
+  <div class="grid-item3">
+    <button class="btn2" routerLink="../inicio">Menu</button>
+  </div>
+</body>
+</html>
+

@@ -1,0 +1,93 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital@1&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script> AOS.init();</script>
+
+<div data-aos="flip-left"z
+data-aos-easing="ease-out-cubic"
+data-aos-duration="1000">
+
+    <div *ngIf="mostrarJuego">
+
+  <body>
+    <br><br><br>
+
+    <div class="usuRes">
+    <h3> Diversión asegurada, {{ jugadorActual.nombre }} nomina de juegos disponibles </h3>
+
+    </div>
+    <div class="wrapper ">
+         <div class="card" routerLink="../inicio" >
+          <img src="https://http2.mlstatic.com/D_NQ_NP_936889-MLA43277695163_082020-O.webp" alt="">
+          <div class="grid-item1">
+           </div>
+        </div>
+
+        <div routerLink="../inicio" class="card" (click)="iniciaJuego()" (click)="selectojuego(2)">
+        <img src="https://www.conmasfuturo.com/wp-content/uploads/2014/04/piedrapapeltijeralagartospock.jpg">
+          <div class="grid-item2">
+         </div>
+        </div>
+
+        <div class="card" routerLink="../inicio" (click)="iniciaJuego()" (click)="selectoPack()">
+          <img src="https://az779572.vo.msecnd.net/screens-400/7f957f1b5345474ea869eff5e7ea9c47"
+          height="100%">
+          <div class=".grid-item2">
+          </div>
+        </div>
+
+        <div class="card" routerLink="../inicio" (click)="iniciaJuego()" >
+        <img src="https://play-lh.googleusercontent.com/IxTbEUOqg2k8WA4BCyW8YXL4un9mWny204Jr3dpQf9udLKbpyq-tzQmRdQn87hvqvz4"
+        height="100%">
+          <div class=".grid-item2">
+          </div>
+        </div>
+
+        <div class="card" routerLink="../inicio" (click)="iniciaJuego()" (click)="selectoPack()" (click)="hacerSalidaPan()">
+        <img src="https://store-images.microsoft.com/image/apps.62838.13510798882882481.fb01a5b9-aa8e-49f0-b5e2-fd3114555ad8.2d82f6b0-a9c7-42b7-9075-63ce4f4021cd?mode=scale&q=90&h=300&w=300">
+          <div class="grid-item1">
+          </div>
+        </div>
+
+        <div class="card" routerLink="../inicio" (click)="iniciaJuego()" (click)="selectojuego(4)">
+          <img src="https://www.cokitos.com/wp-content/uploads/thumbs/custom/J/juego-mayor-menor-150x150.jpg">
+          <div class="grid-item2">
+          </div>
+        </div>
+
+        <div class="card" routerLink="../inicio" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSI7IRQeL7WWuPNx3-p4SNqEgpSCyHL6uvNg&usqp=CAU')">
+          <div class=".grid-item2">
+          </div>
+        </div>
+
+        <div class="card" routerLink="../inicio" style="background-image: url('https://http2.mlstatic.com/D_NQ_NP_2X_834741-MLA40380093564_012020-F.webp')">
+          <div class=".grid-item2">
+         </div>
+        </div>
+
+        <div class="card" routerLink="../inicio" (click)="iniciaJuego()" (click)="selectojuego(5)" >
+        <img src="https://play-lh.googleusercontent.com/HtrJSC3maKqTHcgEcg6nrwt4wYLqtj2r3XbXZ_5OgEi37lSGt5RBMR0UhpEVrs-P9nI">
+          <div class=".grid-item2">
+          </div>
+        </div>
+
+        <div class="card" routerLink="../inicio" (click)="iniciaJuego()" (click)="selectojuego(6)">
+        <img src="https://imgmedia.libero.pe/670x396/libero/original/2022/06/12/62a60c21c5ef8c432e459030.webp"
+        height="100%">
+          <div class=".grid-item2">
+          </div>
+        </div>
+    </div>
+    <div class="grid-item3">
+      <button class="btn" routerLink="../inicio">Menu</button>
+    </div>
+  </body>
+  </div>
+</div>
+
+
+

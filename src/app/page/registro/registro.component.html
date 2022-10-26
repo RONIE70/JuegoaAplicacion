@@ -1,0 +1,100 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script> AOS.init();</script>
+
+<br><br><br><br>
+
+<body>
+  <div class="top_link">
+    <a href="bienvenido"><img
+        src="https://drive.google.com/u/0/uc?id=16U__U5dJdaTfNGobB_OpwAJ73vM50rPV&export=download"
+        alt="" /> Inicio</a>
+  </div>
+  <div data-aos="fade-down"
+      data-aos-easing="linear"
+      data-aos-duration="600">
+      <div id="main-wrapper" class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-10">
+                <div class="card border-0">
+                    <div class="card-body p-0">
+                        <div class="row no-gutters">
+                            <div class="col-lg-6">
+                                <div class="p-5">
+                                    <div class="mb-5">
+                                        <h3 class="h4 font-weight-bold text-theme">Registrate!!</h3>
+                                    </div>
+
+                                    <h6 class="h5 mb-0">Bienvenidx,</h6>
+                                    <p class="text-muted mt-2 mb-5">Ingresa los datos, y empeza a disfrutar!!</p>
+
+                                    <form [formGroup]="contactForm" >
+
+                                      <input type="text" id="email" formControlName="email" placeholder="Ingrese email" [(ngModel)]="email">
+                                      <div>
+                                        <small class="invalid"
+                                        *ngIf="contactForm.controls['email'].errors?.['required'] &&
+                                        contactForm.controls['email'].touched">
+                                        Email, campo obligatorio
+                                      </small>
+                                      <small class="invalid"
+                                        *ngIf="contactForm.controls['email'].errors?.['email'] &&
+                                        contactForm.controls['email'].touched">
+                                        El email no tiene el formato correcto
+                                    </small>
+                                    </div>
+
+                                      <input type="password" id="password" formControlName="password" placeholder="Escriba password" [(ngModel)]="password">
+                                      <div>
+                                        <small class="invalid"
+                                            *ngIf="contactForm.controls['password'].errors?.['required'] &&
+                                            contactForm.controls['password'].touched">
+                                            Password, campo obligatorio
+                                          </small>
+                                      </div>
+
+                                      <input type="password" id="passwordRep" formControlName="passwordRep" placeholder="Escriba password" [(ngModel)]="passwordRep">
+                                      <div>
+                                        <small class="invalid"
+                                            *ngIf="contactForm.controls['passwordRep'].errors?.['required'] &&
+                                            contactForm.controls['passwordRep'].touched">
+
+                                          </small>
+                                      </div>
+
+
+                                      <button type="submit" class="btn-send" (click)="addUser()" >ENVIAR</button>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 d-none d-lg-inline-block">
+                                <div class="account-block rounded-right">
+                                    <div class="overlay rounded-right"></div>
+                                    <div class="account-testimonial">
+                                        <h4 class="text-white mb-4">El mejor entretenimiento!</h4>
+                                        <p class="lead text-white">"La mejor inversión que hice durante mucho tiempo. Solo puedo recomendarlo para otros usuarios."</p>
+                                        <p>Administrador</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- end card-body -->
+                </div>
+
+
+                <p class="text-muted text-center mt-3 mb-0">Si no recordas tu usuario? <a href="/registro" class="text-primary ml-1">Recuperalo</a></p>
+
+
+            </div>
+            <!-- end col -->
+        </div>
+        <!-- Row -->
+    </div>
+
+  </div>
+</body>

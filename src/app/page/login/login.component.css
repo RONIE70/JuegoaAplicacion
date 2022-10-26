@@ -1,0 +1,336 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
+.btn-info:focus {
+  background-color: #5369f8 !important;
+}
+
+.screen__background__shape4 {
+	height: 400px;
+	width: 200px;
+	background: #7E7BB9;
+	top: 420px;
+	right: 50px;
+	border-radius: 60px;
+}
+
+.login {
+	width: 320px;
+	padding: 30px;
+	padding-top: 156px;
+}
+
+.login__field {
+	padding: 20px 0px;
+	position: relative;
+}
+
+.login__icon {
+	position: absolute;
+	top: 30px;
+	color: #7875B5;
+}
+
+.login__input {
+	border: none;
+	border-bottom: 2px solid #D1D1D4;
+	background: none;
+	padding: 10px;
+	padding-left: 24px;
+	font-weight: 700;
+	width: 75%;
+	transition: .2s;
+}
+
+.login__input:active,
+.login__input:focus,
+.login__input:hover {
+	outline: none;
+	border-bottom-color: #6A679E;
+}
+
+.login__submit {
+	background: #fff;
+	font-size: 14px;
+	margin-top: 30px;
+	padding: 16px 20px;
+	border-radius: 26px;
+	border: 1px solid #D4D3E8;
+	text-transform: uppercase;
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	color: #4C489D;
+	box-shadow: 0px 2px 2px #5C5696;
+	cursor: pointer;
+	transition: .2s;
+}
+
+.login__submit:active,
+.login__submit:focus,
+.login__submit:hover {
+	border-color: #6A679E;
+	outline: none;
+}
+
+.button__icon {
+	font-size: 24px;
+	margin-left: auto;
+	color: #7875B5;
+}
+
+
+img{
+	width: 90%;
+
+}
+.login {
+    height: 1000px;
+    width: 100%;
+    background: radial-gradient(#a189b3, #332042);
+    position: relative;
+}
+.login_box {
+    width: 950px;
+    height: 500px;
+    position: absolute;
+    top: 342px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 4px 22px -8px #0004;
+    display: flex;
+    overflow: hidden;
+}
+.login_box .left{
+  width: 41%;
+  height: 100%;
+  padding: 25px 25px;
+
+}
+.login_box .right{
+  width: 59%;
+  height: 100%
+}
+.left .top_link a {
+    color: #452A5A;
+    font-weight: 400;
+}
+.left .top_link{
+  height: 20px
+}
+.left .contact{
+	  display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    height: 100%;
+    width: 73%;
+    margin: auto;
+}
+.left h3{
+  text-align: center;
+  margin-bottom: 40px;
+}
+.left input {
+    border: none;
+    width: 80%;
+    margin: 15px 0px;
+    border-bottom: 1px solid #4f30677d;
+    padding: 7px 9px;
+    width: 100%;
+    overflow: hidden;
+    background: transparent;
+    font-weight: 600;
+    font-size: 14px;
+}
+.left{
+	background: linear-gradient(-45deg, #dcd7e0, #fff);
+}
+.submit {
+    border: none;
+    padding: 15px 70px;
+    border-radius: 8px;
+    display: block;
+    margin: auto;
+    margin-top: 90px;
+    background: #583672;
+    color: #fff;
+    font-weight: bold;
+    -webkit-box-shadow: 0px 9px 15px -11px rgba(88,54,114,1);
+    -moz-box-shadow: 0px 9px 15px -11px rgba(88,54,114,1);
+    box-shadow: 0px 9px 15px -11px rgba(88,54,114,1);
+}
+
+
+
+.right {
+	background: linear-gradient(212.38deg, rgba(242, 57, 127, 0.7) 0%, rgba(175, 70, 189, 0.71) 100%),url(https://static.seattletimes.com/wp-content/uploads/2019/01/web-typing-ergonomics-1020x680.jpg);
+	color: #fff;
+	position: relative;
+}
+
+.right .right-text{
+  height: 100%;
+  position: relative;
+  transform: translate(0%, 45%);
+}
+.right-text h2{
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 500;
+}
+.right-text h5{
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 19px;
+  font-weight: 400;
+}
+
+.right .right-inductor{
+  position: absolute;
+  width: 70px;
+  height: 7px;
+  background: rgba(87, 78, 219, 0);
+  left: 50%;
+  bottom: 70px;
+  transform: translate(-50%, 0%);
+}
+.top_link img {
+    width: 18px;
+    padding-right: 7px;
+    margin-top: -10px;
+}
+
+.checkbox {
+  position: relative;
+  top: 69px;
+  left: -258px;
+}
+
+.record{
+  font-size:smaller;
+  position: relative;
+  top:99px;
+  left: -200px;
+}
+.text-white  {
+  color: rgb(125, 152, 159)!important;
+}
+p  {
+  color: rgb(125, 152, 159)!important;
+}
+
+body{
+  margin-top:-20px;
+  background: #d5dfe9;
+  background-image: url(src\assets\fondologin.jpg);
+}
+.account-block {
+  padding: 0;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  position: relative;
+}
+.account-block .overlay {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.account-block .account-testimonial {
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  margin: 0 auto;
+  padding: 0 1.75rem;
+  bottom: 3rem;
+  left: 0;
+  right: 0;
+}
+
+.text-theme {
+  color: #5369f8 !important;
+}
+
+.btn-theme {
+  background-color: #5369f8;
+  border-color: #5369f8;
+  color: #fff;
+}
+
+input[type="name"],
+input[type="mail"],
+input[type="password"],
+:focus {
+    -webkit-box-shadow: 0 0 5px #43d1af;
+    box-shadow: 0 0 5px #43d1af;
+    padding: 3%;
+    border: 1px solid #43d1af;
+  }
+  input[type="name"],
+  input[type="mail"],
+  input[type="password"] {
+   -webkit-transition: all 0, 30s ease-in-out;
+   transition: all 0, 30s ease-in-out;
+   outline: none;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+   width: 100%;
+   background: #fff;
+   margin-bottom: 4%;
+   border: 1px solid #ccc;
+   padding: 3%;
+   color: #555;
+   font: 95% Arial, Helvetica, sans-serif;
+  }
+  .btn-send {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 3%;
+    background: #5369f8;
+    border-bottom: 2px solid #30c29e;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    color: #fff;
+    font-size: 15px;
+  }
+  .btn-send :hover:not([disabled]) {
+      background: #2ebc99;
+    }
+  .top_link{
+      position: relative;
+      left: 600px;
+      top: 40px;
+      z-index: 1;
+    }
+
+  .btn-info{
+    display: flex;
+    float: right;
+    position: relative;
+    top:-30px;
+    left: 120px;
+    z-index: 1;
+    background-color: #5369f8;
+  }
+  .account-block .overlay {
+    background: #d5dfe9 !important;
+
+  }
+

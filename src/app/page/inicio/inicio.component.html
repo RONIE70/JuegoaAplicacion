@@ -1,0 +1,309 @@
+
+<main class="site-wrapper">
+  <div class="pt-table desktop-768">
+    <div
+      class="pt-tablecell page-home relative"
+      style="
+        background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);
+        background-position: center;
+        background-size: cover;
+      "
+    >
+      <div class="overlay"></div>
+
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-xs-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8"
+          >
+            <div *ngIf="this.usuarioActual">
+              <div class="page-title home text-center">
+                <br>
+                <span class="heading"> ¡ Bienvenido,{{this.usuarioActual.nombre}} {{this.usuarioActual.apellido}} a nuestra app !</span>
+                <br>
+                <span class="datos"> Mail de suscripción : {{this.usuarioActual.email}} <span>/</span>  Categoría Suscripción : {{this.usuarioActual.tipo_suscripcion}}</span>
+              </div>
+            </div>
+
+            <div class="hexagon-menu clear">
+              <div class="hexagon-item">
+                <div class="hex-item">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <div class="hex-item">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <a class="hex-content">
+                  <span class="hex-content-inner">
+                    <span class="icon">
+                      <i class="fa fa-universal-access"></i>
+                    </span>
+                    <a class="title" href="../inicio/">Favoritos</a>
+                  </span>
+                  <svg
+                    viewBox="0 0 173.20508075688772 200"
+                    height="200"
+                    width="174"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z"
+                      fill="#1e2530"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+              <div class="hexagon-item">
+                <div class="hex-item">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <div class="hex-item">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <a class="hex-content">
+                  <span class="hex-content-inner">
+                    <span class="icon">
+                      <i class="fa fa-bullseye"></i>
+                    </span>
+                    <a class="title" href="../suscripcion/">Suscripciones</a>
+                  </span>
+                  <svg
+                    viewBox="0 0 173.20508075688772 200"
+                    height="200"
+                    width="174"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z"
+                      fill="#1e2530"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+              <div class="hexagon-item">
+                <div class="hex-item">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <div class="hex-item">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <a class="hex-content">
+                  <span class="hex-content-inner">
+                    <span class="icon">
+                      <i class="fa fa-braille"></i>
+                    </span>
+                    <a class="title" href="../estadisticas/">Estadisticas</a>
+                  </span>
+                  <svg
+                    viewBox="0 0 173.20508075688772 200"
+                    height="200"
+                    width="174"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z"
+                      fill="#1e2530"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+              <div class="hexagon-item">
+                <div class="hex-item">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <div class="hex-item">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <a class="hex-content">
+                  <span class="hex-content-inner">
+                    <span class="icon">
+                      <i class="fa fa-id-badge"></i>
+                    </span>
+                    <a class="title" href="../inicio/">Dejanos tu opinion</a>
+                  </span>
+                  <svg
+                    viewBox="0 0 173.20508075688772 200"
+                    height="200"
+                    width="174"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z"
+                      fill="#1e2530"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+              <div class="hexagon-item">
+                <div class="hex-item">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <div class="hex-item">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <a class="hex-content">
+                  <span class="hex-content-inner">
+                    <span class="icon">
+                      <i class="fa fa-life-ring"></i>
+                    </span>
+                    <a class="title" href="././juegos">Juegos</a>
+                  </span>
+                  <svg
+                    viewBox="0 0 173.20508075688772 200"
+                    height="200"
+                    width="174"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z"
+                      fill="#1e2530"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+              <div class="hexagon-item">
+                <div class="hex-item">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <div class="hex-item">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <a class="hex-content">
+                  <span class="hex-content-inner">
+                    <span class="icon">
+                      <i class="fa fa-clipboard"></i>
+                    </span>
+                    <a class="title" href="../quien-soy/">Sobre Mi</a>
+                  </span>
+                  <svg
+                    viewBox="0 0 173.20508075688772 200"
+                    height="200"
+                    width="174"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z"
+                      fill="#1e2530"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+              <div class="hexagon-item">
+                <div class="hex-item">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <div class="hex-item">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <a class="hex-content">
+                  <span class="hex-content-inner">
+                    <span class="icon">
+                      <i class="fa fa-map-signs"></i>
+                    </span>
+                    <a href="../inicio/" class="title">Usuarios</a>
+                  </span>
+                  <svg
+                    viewBox="0 0 173.20508075688772 200"
+                    height="200"
+                    width="174"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z"
+                      fill="#1e2530"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <app-chat></app-chat>
+</main>
+<div class="footer-push">
+
+
+<div id="back-to-chat-placeholder"></div>
+
+
+
+
+
+<div id="footer" class="global-footer">
+
+<div id="contact-bar" class="global-contactbar">
+
+    <div class="container">
+        <h3 class="bar-title">¿Quieres contactar con nosotros?</h3>
+
+        <div class="contact-channels">
+
+<div id="phone-contact" class="channel popover-wrapper">
+<a
+    href="#callus"
+    id="phoneContactTrigger"
+    class="btn btn-lightgrey popover-trigger">Llámanos</a>
+
+<div class="phonePopover phone-popover popover top lang-es">
+    <div class="popover-content"></div>
+
+
+</div>
+</div>
+
+
+
+<div class="channel">
+
+<div>
+  <a href="#">Contactar</a>
+</div>
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+<router-outlet></router-outlet>

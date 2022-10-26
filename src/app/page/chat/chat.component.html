@@ -1,0 +1,38 @@
+
+<div class="chatIconConteiner" *ngIf="email && !mostrarChat" (click)="mostrarChat=true">
+  <img src="../assets/chat.png" class="chatIcon">
+</div>
+<div class="card text-center cardConteiner" *ngIf="email && mostrarChat">
+
+  <div class="card-header">
+    CHAT Creative
+    <div class="closeIcon" (click)="mostrarChat=false">X</div>
+  </div>
+  <div class="card-body">
+    <div  style=" overflow:auto;max-height:380px; max-width:300px;" id="contenedorDeMensajes" class="contenedorDeMensajes h-100">
+
+      <div *ngIf="mensaje">
+        <div *ngFor="let item of colleccionAsync|async" class="msj p-2"
+          [ngClass]="(email==mensaje.emisor)? 'enviado' : 'recibido'">
+          <div  [appUsuario]="item"></div><br>
+          <!-- {{item|mensajes}} -->
+       </div>
+      </div>
+
+
+
+    </div>
+
+  </div>
+
+    <form class="card-footer text-muted input-group" (ngSubmit)="Agregar()">
+      <input type="text" class="form-control" placeholder="Ingresa tu mensaje" [(ngModel)]="textoMensaje"
+      [ngModelOptions]="{standalone: true}">
+        <div class="input-group-append" (click)="Agregar()">
+          <span class="input-group-text" id="basic-addon2">
+            <img class="imgEnviar" src="https://cdn-icons-png.flaticon.com/512/786/786407.png" width="20px">
+          </span>
+      </div>
+    </form>
+
+</div>

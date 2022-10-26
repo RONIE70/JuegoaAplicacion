@@ -1,0 +1,103 @@
+<link
+  rel="stylesheet"
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+  crossorigin="anonymous"
+/>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+<br /><br /><br /><br />
+
+<body>
+  <div class="top_link">
+    <a href="bienvenido"
+      ><img
+        src="https://drive.google.com/u/0/uc?id=16U__U5dJdaTfNGobB_OpwAJ73vM50rPV&export=download"
+        alt=""
+      />
+      Inicio</a
+    >
+  </div>
+  <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="600">
+    <div id="main-wrapper" class="container">
+      <div class="row justify-content-center">
+        <div class="col-xl-10">
+          <div class="card border-0">
+            <div class="card-body p-0">
+              <div class="row no-gutters">
+                <div class="col-lg-6">
+                  <div class="p-5">
+                    <div class="mb-5">
+                      <h3 class="h4 font-weight-bold text-theme">Login</h3>
+                    </div>
+                    <!-- <div *ngFor="let item of collection">
+                      {{ item }}
+                    </div> -->
+                    <h6 class="h5 mb-0">Bienvenidx! {{ user.email }}</h6>
+                    <p class="text-muted mt-2 mb-5">
+                      Ingresa los datos que usaste para el registro
+                    </p>
+                    <div
+                      class="alert alert-danger text-center"
+                      role="alert"
+                      *ngIf="messageError != ''"
+                    >
+                      {{ messageError }}
+                    </div>
+
+                    <input
+                      type="mail"
+                      [(ngModel)]="user.email"
+                      placeholder="MAIL"
+                    />
+                    <input
+                      name="password"
+                      type="password"
+                      [(ngModel)]="user.pass"
+                      placeholder="PASSWORD"
+                    />
+                    <button class="btn-send" type="submit" (click)="login()">
+                      INGRESAR
+                    </button>
+                    <button
+                      class="btn btn-info"
+                      type="submit"
+                      (click)="onSetDefault()"
+                    >
+                      Test
+                    </button>
+                  </div>
+                </div>
+
+                <div class="col-lg-6 d-none d-lg-inline-block">
+                  <div class="account-block rounded-right">
+                    <div class="overlay rounded-right"></div>
+                    <div class="account-testimonial">
+                      <h4 class="text-white mb-4">COMIENZA EL JUEGO</h4>
+                      <p class="lead text-white">
+                        "Se una versión mejor de ti cada día, pero sin olvidar
+                        tus orígenes"
+                      </p>
+                      <p>Creative Admin</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="text-muted text-center mt-3 mb-0">
+          No tenes usuario y/o cuenta?
+          <a href="/registro" class="text-primary ml-1">registro</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+
+<router-outlet></router-outlet>
+

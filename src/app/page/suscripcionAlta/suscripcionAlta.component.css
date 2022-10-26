@@ -1,0 +1,23 @@
+.col-md-4{
+text-align: center;
+}
+a:link{
+  opacity:1;
+  border-color: rgb(75, 254, 93);
+  text-decoration:none;
+}
+a:hover{
+  background-color:#072345;
+  transform: scale(1.1);
+}
+a:active {
+  color: rgb(238, 238, 245);
+
+}
+a:link, a:visited {
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
