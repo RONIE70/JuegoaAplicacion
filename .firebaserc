@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "juegosapp-e1b04"
+  },
+  "targets": {
+    "juegosapp-e1b04": {
+      "hosting": {
+        "projectAngular": [
+          "juegosapp-e1b04"
+        ]
+      }
+    }
+  }
+}
